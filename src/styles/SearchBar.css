@@ -1,0 +1,52 @@
+/* src/styles/SearchBar.css */
+
+.search-bar-container {
+    display: flex;
+    justify-content: center; /* Center the search bar */
+    margin: 20px 0; /* Vertical margin */
+  }
+  
+  .search-bar {
+    display: flex; /* Align input and button horizontally */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .search-input {
+    padding: 10px 15px; /* Padding for input */
+    width: 300px; /* Width of input */
+    margin-right: 10px; /* Space between input and button */
+    border: 2px solid #7bbafe; /* Light border color */
+    border-radius: 25px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .search-input::placeholder {
+    color: #888; /* Placeholder text color */
+  }
+  
+  .search-input:focus {
+    border-color: #411e74; /* Darker border on focus */
+  }
+  
+  .search-button {
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 25px; /* Rounded edges */
+    background-color: #411e74; /* Dark background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .search-button:hover {
+    background-color: #7bbafe; /* Lighten background on hover */
+    transform: translateY(-2px); /* Slightly raise button on hover */
+  }
+  
+  .search-button:active {
+    transform: translateY(0); /* Reset button position when clicked */
+  }
+  

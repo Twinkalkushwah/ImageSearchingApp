@@ -1,0 +1,57 @@
+.app {
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.app-header {
+    background: linear-gradient(135deg, #411e74, #7bbafe); /* Soft gradient background */
+    padding: 30px 20px; /* Reduced padding for a shorter header */
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    margin-bottom: 0px;
+    position: relative; /* For pseudo-elements */
+    overflow: hidden; /* Prevents overflow of pseudo-elements */
+}
+
+.app-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Light overlay for softness */
+    z-index: 0; /* Behind the text */
+    border-radius: 15px; /* Match border radius */
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 3.5rem; /* Slightly reduced font size */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    position: relative; /* Position for text decoration */
+    z-index: 1; /* Above the overlay */
+}
+
+.app-header p {
+    margin: 5px 0 0; /* Adjusted margin for better spacing */
+    font-size: 1.2rem; /* Slightly reduced font size */
+    opacity: 0.9;
+    font-style: italic; /* Italic for emphasis */
+    text-align: center; /* Center text */
+    z-index: 1; /* Above the overlay */
+    position: relative; /* Position for text decoration */
+}
+
+.app-header::after {
+    content: '🎨'; /* Decorative emoji or symbol */
+    font-size: 4rem; /* Slightly reduced size of the decoration */
+    position: absolute;
+    bottom: -30px; /* Adjusted position below the header */
+    right: 10px; /* Position to the right */
+    opacity: 0.3; /* Faint for a subtle effect */
+    z-index: 0; /* Behind the text */
+}
